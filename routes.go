@@ -13,7 +13,7 @@ type Route struct{
 	HandlerFunc http.HandlerFunc
 }
 
-type Routers []Route
+type Routes []Route
 
 func newRouter() *mux.Router{
 	router := mux.NewRouter().StrictSlash(true)
