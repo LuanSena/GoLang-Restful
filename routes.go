@@ -1,49 +1,47 @@
 package main
 
-import(
+import (
 	"net/http"
-
-	"github.com/gorilla/mux"
 )
 
-type Route struct{
-	Name string
-	Method string
-	Pattern string
+type Route struct {
+	Name        string
+	Method      string
+	Pattern     string
 	HandlerFunc http.HandlerFunc
 }
 
 type Routes []Route
 
-func newRouter() *mux.Router{
-	router := mux.NewRouter().StrictSlash(true)
-    for _, route := range routes {
-        router.
-            Methods(route.Method).
-            Path(route.Pattern).
-            Name(route.Name).
-            Handler(route.HandlerFunc)
-	}
-	return router
-}
-
 var routes = Routes{
-    Route{
-        "index",
-        "GET",
-        "/",
-        index,
-    },
-    Route{
-        "invoiceIndex",
-        "GET",
-        "/invoiceIndex",
-        invoiceIndex,
-    },
-    Route{
-        "invoiceShow",
-        "GET",
-        "/invoiceShow/{invoiceDoc}",
-        invoiceShow,
-    },
+	Route{
+		"index",
+		"GET",
+		"/",
+		index,
+	},
+	Route{
+		"getAllInvoices",
+		"GET",
+		"/invoices",
+		getAllInvoices,
+	},
+	Route{
+		"invoiceInclude",
+		"POST",
+		"/invoices",
+		invoiceInclude,
+	},
+	Route{
+		"getInvoiceBydoc",
+		"GET",
+		"/invoices/{document}",
+		getInvoiceBydoc,
+	},
+	Route{
+		"invoiceDelete",
+		"DELETE",
+		"/invoices/{document}",
+		invoiceDelete,
+	},
 }
