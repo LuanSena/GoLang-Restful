@@ -1,8 +1,9 @@
 # GoLang Restful
-
+[![Portugues](https://img.shields.io/badge/README-PT--BR-blue.svg)](https://github.com/LuanSena/GoLang-Restful-Invoice/blob/master/README.md)
+[![English](https://img.shields.io/badge/README-ENGLISH-blue.svg)](https://github.com/LuanSena/GoLang-Restful-Invoice/blob/master/README_eng.md)
 ## Como utilizar:
 **é necessario criar o banco de dados e tabela no Mysql,
-  script disponivel no arquivo createDB.sql**
+  script disponivel no arquivo SQL/createDB.sql**
 
 - git clone https://github.com/LuanSena/GoLang-Restful-Invoice.git
 - cd GoLang-Restful-Invoice
