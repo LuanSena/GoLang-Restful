@@ -39,5 +39,5 @@
 - Parameters: Token, document
 - Method: DELETE
 
-**Relacionamento entre arquivos**
+**Relationship between files**
 ![CSCore Logo](https://github.com/LuanSena/LuanSena.github.io/blob/master/img/1481812193122637.PNG)
