@@ -6,7 +6,7 @@
   Script available in file createDB.sql**
 
 - git clone https://github.com/LuanSena/GoLang-Restful-Invoice.git
-- cd GoLang-Restful-Invoice
+- cd source
 - configure the database.go file (user:pass@/dataBaseName)
 - go build
 - ./GoLang-Restful-Invoice
